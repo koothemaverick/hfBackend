@@ -458,3 +458,16 @@ Mysql, Redis
 
 #### 공지사항, 관리자 페이지
 ![시연5](https://github.com/user-attachments/assets/2d0dc00a-e92f-4fe0-8ad0-d19c142fe29a)
+
+## 프로젝트 리뷰
+- API(KOPIS, APIS) 도메인
+    - 축제/공연 최신 데이터 갱신 메서드 및 스케줄러 구현
+    - KOPIS의 xml 데이터를 jackson 라이브러리 사용으로 객체 변환 구현
+
+- 커뮤니티 도메인
+    - 기본적인 CRUD 및 검색, 세부기능 API 구현
+    - 영속성 컨텍스트 문제 발생 -> 더티체킹으로 해결
+ 
+- 프론트엔드
+    - handleScroll을 통한 무한 스크롤 이벤트 리스너 구현(page형식으로 요청)
+    - delayDebounceFn를 통해 검색어 변경시 자동 검색 구현
